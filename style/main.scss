@@ -465,8 +465,7 @@ hr {
 }
 
 .labels .tile .tile-inner {
-  color: white;
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @include keyframes(appear) {
