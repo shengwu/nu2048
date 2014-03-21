@@ -464,6 +464,11 @@ hr {
   }
 }
 
+.labels .tile .tile-inner {
+  color: white;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.6);
+}
+
 @include keyframes(appear) {
   0% {
     opacity: 0;
