@@ -5,7 +5,7 @@ Made just for fun. [Play it here!](http://www.nu2048.com/)
 
 ### Screenshot
 
-[![Screenshot](https://github.com/shengwu/nu2048/blob/master/screenshot.png)](https://github.com/shengwu/nu2048/blob/master/screenshot.png)
+[![Screenshot](https://raw.githubusercontent.com/shengwu/nu2048/master/screenshot.png)](https://raw.githubusercontent.com/shengwu/nu2048/master/screenshot.png)
 
 ## Contributing
 Changes and improvements are more than welcome! Feel free to fork and open a pull request. Please make your changes in a specific branch and request to pull into `master`! If you can, please make sure the game fully works before sending the PR, as that will help speed up the process.
