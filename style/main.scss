@@ -9,7 +9,7 @@ $tile-border-radius: 3px;
 
 $mobile-threshold: $field-width + 20px;
 
-$text-color: #776E65;
+$text-color: #f9f6f2;
 $bright-text-color: #f9f6f2;
 
 $tile-color: #eee4da;
@@ -24,7 +24,7 @@ html, body {
   margin: 0;
   padding: 0;
 
-  background: #faf8ef;
+  background: #8B4B96;
   color: $text-color;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
@@ -41,7 +41,7 @@ body {
 }
 
 h1.title {
-  font-size: 80px;
+  font-size: 70px;
   font-weight: bold;
   margin: 0;
   display: block;
@@ -70,27 +70,27 @@ h1.title {
 
   position: relative;
   display: inline-block;
-  background: $game-container-background;
-  padding: 15px 25px;
+  background: #999;
+  padding: 13px 20px;
   font-size: $height;
   height: $height;
   line-height: $height + 22px;
   font-weight: bold;
   border-radius: 3px;
   color: white;
-  margin-top: 8px;
+  margin-top: 6px;
   text-align: center;
 
   &:after {
     position: absolute;
     width: 100%;
-    top: 10px;
+    top: 8px;
     left: 0;
     text-transform: uppercase;
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: $tile-color;
+    color: #eee;
   }
 
   .score-addition {
@@ -159,7 +159,7 @@ hr {
 // Styles for buttons
 @mixin button {
   display: inline-block;
-  background: darken($game-container-background, 20%);
+  background: #777;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
@@ -180,7 +180,8 @@ hr {
     -webkit-user-select: none;
     -moz-user-select: none;
 
-    background: $game-container-background;
+//    background: $game-container-background;
+    background: rgba(0, 0, 0, 0.2);
     border-radius: $tile-border-radius * 2;
     width: $field-width;
     height: $field-width;
@@ -197,7 +198,7 @@ hr {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba($tile-color, .5);
+      background: rgba(255, 255, 255, 0.7);
       z-index: 100;
 
       text-align: center;
@@ -208,6 +209,7 @@ hr {
         height: 60px;
         line-height: 60px;
         margin-top: 222px;
+        color: #333;
         // height: $field-width;
         // line-height: $field-width;
       }
@@ -272,7 +274,7 @@ hr {
 
     border-radius: $tile-border-radius;
 
-    background: rgba($tile-color, .35);
+    background: rgba(255, 255, 255, 0.3);
 
     &:last-child {
       margin-right: 0;
@@ -301,6 +303,7 @@ hr {
         }
       }
     }
+
   }
 }
 
@@ -317,6 +320,7 @@ hr {
     text-align: center;
     font-weight: bold;
     z-index: 10;
+    color: transparent;
 
     font-size: 55px;
   }
@@ -326,6 +330,53 @@ hr {
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
   transition-property: transform;
+
+  // Custom Northwestern-themed gifs
+  &.tile-2 .tile-inner {
+    // chet
+    background: #fff url('http://i.imgur.com/T2mHlrq.gif');
+  }
+  &.tile-4 .tile-inner {
+    // ani
+    background: #fff url('http://i.imgur.com/QnYufeG.gif');
+  }
+  &.tile-8 .tile-inner {
+    // drew
+    background: #fff url('http://i.imgur.com/5PzKN0x.gif');
+  }
+  &.tile-16 .tile-inner {
+    // witte
+    background: #fff url('http://i.imgur.com/zSOccOe.gif');
+  }
+  &.tile-32 .tile-inner {
+    // renee
+    background: #fff url('http://i.imgur.com/peQjXe7.gif');
+  }
+  &.tile-64 .tile-inner {
+    // morson
+    background: #fff url('http://i.imgur.com/9prrum0.gif');
+  }
+  &.tile-128 .tile-inner {
+    // pti
+    background: #fff url('http://i.imgur.com/99JzcSd.gif');
+  }
+  &.tile-256 .tile-inner {
+    // burgie
+    background: #fff url('http://i.imgur.com/5fHZyCr.gif');
+  }
+  &.tile-512 .tile-inner {
+    // willie
+    background: #fff url('http://i.imgur.com/lBhqfit.gif');
+  }
+  &.tile-1024 .tile-inner {
+    // fitz
+    background: #fff url('http://i.imgur.com/awbi9lG.gif');
+  }
+  &.tile-2048 .tile-inner {
+    // morty
+    background: #fff url('http://i.imgur.com/ZnyPthj.gif');
+  }
+
 
   $base: 2;
   $exponent: 1;
@@ -362,20 +413,20 @@ hr {
         $mixed-background: mix($special-background, $mixed-background, 55%);
       }
 
-      @if $bright-color {
-        color: $bright-text-color;
-      }
+//      @if $bright-color {
+//        color: $bright-text-color;
+//      }
 
       // Set background
-      background: $mixed-background;
+//      background: $mixed-background;
 
       // Add glow
       $glow-opacity: max($exponent - 4, 0) / ($limit - 4);
 
-      @if not $special-background {
-        box-shadow: 0 0 30px 10px rgba($tile-gold-glow-color, $glow-opacity / 1.8),
-                    inset 0 0 0 1px rgba(white, $glow-opacity / 3);
-      }
+//      @if not $special-background {
+//        box-shadow: 0 0 30px 10px rgba($tile-gold-glow-color, $glow-opacity / 1.8),
+//                    inset 0 0 0 1px rgba(white, $glow-opacity / 3);
+//      }
 
       // Adjust font size for bigger numbers
       @if $power >= 100 and $power < 1000 {
@@ -392,6 +443,9 @@ hr {
           font-size: 15px;
         }
       }
+
+      // To properly display custom images
+      background-size: cover;
     }
 
     $exponent: $exponent + 1;
