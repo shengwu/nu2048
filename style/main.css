@@ -383,6 +383,10 @@ hr {
       .tile.tile-super .tile-inner {
         font-size: 10px; } }
 
+.labels .tile .tile-inner {
+  color: white;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.6); }
+
 @-webkit-keyframes appear {
   0% {
     opacity: 0;
