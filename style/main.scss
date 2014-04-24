@@ -376,11 +376,15 @@ hr {
     // morty
     background: #fff url('http://i.imgur.com/ZnyPthj.gif');
   }
+  &.tile-4096 .tile-inner {
+    // special bonus colbert
+    background: #fff url('http://i.imgur.com/EW7C3tE.gif');
+  }
 
 
   $base: 2;
   $exponent: 1;
-  $limit: 11;
+  $limit: 12;
 
   // Colors for all 11 states, false = no special color
   $special-colors: false false, // 2
@@ -393,7 +397,8 @@ hr {
                    false true, // 256
                    false true, // 512
                    false true, // 1024
-                   false true; // 2048
+                   false true, // 2048
+                   false true; // 4096
 
   // Build tile colors
   @while $exponent <= $limit {

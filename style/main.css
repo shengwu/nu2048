@@ -333,6 +333,8 @@ hr {
     background: white url("http://i.imgur.com/awbi9lG.gif"); }
   .tile.tile-2048 .tile-inner {
     background: white url("http://i.imgur.com/ZnyPthj.gif"); }
+  .tile.tile-4096 .tile-inner {
+    background: white url("http://i.imgur.com/EW7C3tE.gif"); }
   .tile.tile-2 .tile-inner {
     background-size: cover; }
   .tile.tile-4 .tile-inner {
@@ -374,6 +376,12 @@ hr {
     background-size: cover; }
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
+        font-size: 15px; } }
+  .tile.tile-4096 .tile-inner {
+    font-size: 35px;
+    background-size: cover; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-4096 .tile-inner {
         font-size: 15px; } }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
